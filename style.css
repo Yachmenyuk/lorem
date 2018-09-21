@@ -249,7 +249,7 @@ input#search:focus {
 	width: 8vw;
 	height: 8vw;
 	display: inline-block;
-	background-image: url(img/tab/grey/imac_grey.png);
+	background-image: url(img/tab/grey/imacgrey.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -281,7 +281,7 @@ input#search:focus {
 	
 }
 .box:hover .imac-img {
-	background-image: url(img/tab/blue/imac_blue.png);
+	background-image: url(img/tab/blue/imacblue.png);
 	transition: all 2s;
 	
 	
