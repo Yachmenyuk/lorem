@@ -174,10 +174,11 @@ input#search:focus {
 /*Section2*/
 .section2 {
 	margin-top: 3vw;
-	min-height: 20vw;
+	height: 81.5vw;
 	text-align: center;
 	font: 1vw Arial Helvetica sans-serif;
 	color: #9a9a9a;
+	position: relative;
 }
 
 .section2 p:nth-child(2) {
@@ -192,9 +193,9 @@ input#search:focus {
 
 .section2 .box {
 	width: 22vw;
-	height: auto;
 	display: inline-block;
 	margin: 1vw;
+	transition: all 3s;
 	
 }
 
@@ -208,6 +209,7 @@ input#search:focus {
 	top: 0vw; 
 	border: 5vw solid transparent;
     border-bottom: 5vw solid #eeeeee;
+    transition: all 3s;
 	z-index: -1;
    }
   /*END triangle*/
@@ -251,6 +253,8 @@ input#search:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	
+	
 }
 
 .photo-img {
@@ -261,6 +265,8 @@ input#search:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	
+	
 }
 
 .pencil-img {
@@ -272,33 +278,43 @@ input#search:focus {
 	background-repeat: no-repeat;
 	background-position: center;
 	
+	
 }
 .box:hover .imac-img {
 	background-image: url(img/tab/blue/imac_blue.png);
+	transition: all 2s;
+	
 	
 }
 .box:hover .photo-img {
 	background-image: url(img/tab/blue/photo_blue.png);
+	transition: all 2s;
+	
 	
 }
 
 .box.imac:hover ~ .pencil .pencil-img {
 	background-image: url(img/tab/grey/pencil_grey.png);
+	transition: all 2s;
+	
 	
 }
 
 .box.imac:hover ~ .pencil {
 	transform: translate(-24vw,0);
+	transition: all 2s;
 	
 }
 
 .box.photo:hover ~ .pencil .pencil-img {
 	background-image: url(img/tab/grey/pencil_grey.png);
+	transition: all 2s;
 	
 }
 
 .box.photo:hover ~ .pencil {
 	transform: translate(-24vw,0);
+	transition: all 2s;
 	
 }
 
@@ -314,8 +330,8 @@ input#search:focus {
     background: #eeeeee;
 	position:relative;
 	width: 100%; min-height: 40vw;
-	margin-top: 0;
-	overflow: visible;
+	transition: opacity 5s;
+	
 }
 
    /*galery-photo-container*/
@@ -342,7 +358,6 @@ input#search:focus {
 	margin-top:2vw;
 }
 .img-preview p{
-
 	 text-align: left;
 	 line-height:  1.5vw;
 	 padding: 0 2.1vw 1.4vw 1.4vw;
@@ -360,7 +375,7 @@ input#search:focus {
 
 .img-preview img{
 	width: 100%;
-	min-height: 12.92vw;
+	height: 12.92vw;
 }
 
 .section3_1 {
@@ -392,57 +407,58 @@ input#search:focus {
 .box.imac:hover ~ .section3_1 {
 	z-index: 10;
 	opacity: 1;
-	transition: opacity 2s;
+	transition: opacity 4s;
 	
 }
 .box.imac:hover ~ .section3_2 {
 	z-index: 8;
 	opacity: 0.5;
-	transition: opacity 2s;
+	transition: opacity 4s;
 }
 .box.imac:hover ~ .section3_3{
 	z-index: 6;
 	opacity: 0.9;
-	transition: opacity 2s;
+	transition: opacity 4s;
 }
 
 /*photo:hover*/
 .box.photo:hover ~.section3_3 {
 	z-index: 12;
 	opacity: 1;
-	transition: opacity 2s;
+	transition: opacity 4s;
 }
 .box.photo:hover ~ .section3_2 {
 	z-index: 8;
 	opacity: 0.5;
-	transition: opacity 2s;
+	transition: opacity 4s;
 }
 .box.photo:hover ~ .section3_1 {
 	z-index: 6;
 	opacity: 0.9;
-	transition: opacity 2s;
+	transition: opacity 4s;
 }
 
 /*pebcil:hover*/
 .box.pencil:hover ~.section3_2 {
 	z-index: 10;
 	opacity: 1;
-	transition: opacity 2s;
+	transition: opacity 4s;
 }
 .box.pencil:hover ~ .section3_1 {
 	z-index: 8;
 	opacity: 0.5;
-	transition: opacity 2s;
+	transition: opacity 4s;
 }
 .box.pencil:hover ~ .section3_3 {
 	z-index: 6;
 	opacity: 0.5;
-	transition: opacity 2s;
+	transition: opacity 4s;
 }
 
 
 
 /*customer logos*/
+
 
 .customer-logos .img-box {
 	display: inline-block;
@@ -450,6 +466,7 @@ input#search:focus {
 	height: 6.42vw;
 	margin: 2vw 3vw;
 	background-repeat: no-repeat;
+	
 	
 }
 
@@ -482,7 +499,6 @@ input#search:focus {
 /*Footer*/
 	/*First-line*/
 .footer {
-		margin-top: 42vw;
 		position: relative;
 	}
 
